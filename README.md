@@ -25,4 +25,4 @@ This project is made for learning and practice purposes.
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/mini-amazon.git
+   git clone https://github.com/Anup9771/mini-amazon.git
