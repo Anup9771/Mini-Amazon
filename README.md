@@ -18,8 +18,6 @@ This project is made for learning and practice purposes.
 ## Tech Stack
 
 - HTML, CSS, JavaScript  
-- Backend: Node.js / Python *(as used)*  
-- Database: MongoDB / MySQL *(as used)*  
 
 ---
 
