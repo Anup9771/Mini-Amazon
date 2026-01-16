@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Amazon - Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Mini<span>Amazon</span></div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search products, e.g. laptop" />
+    </div>
+    <div class="actions">
+      <button id="darkToggle" class="icon-btn" title="Toggle Dark Mode">🌙</button>
+      <a href="wishlist.html" class="icon-btn" id="wishlist-btn" title="Wishlist">♡ <span id="wishlist-count">0</span></a>
+      <a href="cart.html" class="icon-btn" id="cart-btn" title="Cart">🛒 <span id="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul id="categories">
+        <li data-cat="all" class="active">All</li>
+      </ul>
+
+      <h3>Filters</h3>
+      <label>Price
+        <select id="sort">
+          <option value="default">Sort</option>
+          <option value="low">Price: Low → High</option>
+          <option value="high">Price: High → Low</option>
+        </select>
+      </label>
+
+      <label>Max Price: <span id="priceVal">₹100000</span></label>
+      <input id="priceRange" type="range" min="0" max="100000" step="500" value="100000">
+
+      <button id="clearFilters" class="btn">Clear Filters</button>
+    </aside>
+
+    <section class="products-section">
+      <div class="controls-row">
+        <div id="resultsInfo">Showing <span id="count">0</span> products</div>
+        <div class="grid-toggle">
+          <button id="gridBtn" class="active">Grid</button>
+          <button id="listBtn">List</button>
+        </div>
+      </div>
+
+      <div id="product-list" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close" id="closeModal">✖</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
